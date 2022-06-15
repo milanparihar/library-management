@@ -11,6 +11,7 @@
     text-transform: capitalize;
 }
 
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -183,7 +184,8 @@ section {
     background: #8b3a1b;
 }
 
-.login-form-container {
+.registered-form-container,
+    .login-form-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,11 +198,14 @@ section {
     width: 100%;
 }
 
-.login-form-container.active {
+
+.login-form-container.active,
+.registered-form-container.active{
     right: 0;
 }
 
-.login-form-container form {
+.login-form-container form,
+.registered-form-container form {
     background: #fff;
     width: 40rem;
     padding: 2rem;
@@ -209,20 +214,23 @@ section {
     margin: 2rem;
 }
 
-.login-form-container form h3 {
+.login-form-container form h3,
+.registered-form-container form h3 {
     font-size: 2.5rem;
     text-transform: uppercase;
     color: #444;
     text-align: center;
 }
 
-.login-form-container form span {
+.login-form-container form span,
+.registered-form-container form span {
     display: block;
     font-size: 1.5rem;
     padding-top: 1rem;
 }
 
-.login-form-container form .box {
+.login-form-container form .box,
+.registered-form-container form .box {
     width: 100%;
     margin: .7rem 0;
     font-size: 1.6rem;
@@ -232,37 +240,43 @@ section {
     text-transform: none;
 }
 
-.login-form-container form .checkbox {
+.login-form-container form .checkbox,
+.registered-form-container form .checkbox {
     display: flex;
     align-items: center;
     gap: .5rem;
     padding: 1rem 0;
 }
 
-.login-form-container form .checkbox label {
+.login-form-container form .checkbox label,
+.registered-form-container form .checkbox label {
     font-size: 1.5rem;
     color: #666;
     cursor: pointer;
 }
 
-.login-form-container form .btn {
+.login-form-container form .btn,
+.registered-form-container form .btn {
     text-align: center;
     width: 100%;
     margin: 1.5rem 0;
 }
 
-.login-form-container form p {
+.login-form-container form p,
+.registered-form-container form p {
     padding-top: .8rem;
     color: #666;
     font-size: 1.5rem;
 }
 
-.login-form-container form p a {
+.login-form-container form p a,
+.registered-form-container form p a {
     color: #fd5616;
     text-decoration: underline;
 }
 
-.login-form-container #close-login-btn {
+.login-form-container #close-login-btn,
+.registered-form-container #close-login-btn {
     position: absolute;
     top: 1.5rem;
     right: 2.5rem;
@@ -299,10 +313,6 @@ section {
     margin: 25px -210px -26px;
     padding: 37px;
 }
-
-
-
-
 .home .row .books-slider .stand {
     width: 100%;
     margin-left: 1rem;
@@ -320,20 +330,17 @@ section {
     line-height: 2;
     padding: 1rem 0;
 }
-
 .icons-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
 }
-
 .icons-container .icons {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     padding: 2rem 0;
 }
-
 .icons-container .icons i {
     font-size: 3.5rem;
     color: #fd5616;
